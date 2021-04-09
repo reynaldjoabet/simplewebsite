@@ -1,997 +1,907 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 /*  navbar styling*/
 
-.navbar{
-    position: fixed;
-    width: 100%;
-   z-index: 999;
-    padding: 30px 0;
-    transition: all 0.3s ease;
-    
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  transition: all 0.3s ease;
 }
 
-.navbar.sticky{
-    padding: 20px 0;
-    background: crimson;
+.navbar.sticky {
+  padding: 20px 0;
+  background: crimson;
 }
 
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  width: 100%;
+  margin: auto;
 }
 
-.navbar .max-width{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar .menu li a{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: 25px;
-    transition: color 0.3s  easse;
+.navbar .menu li a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: color 0.3s easse;
 }
 
-.navbar .menu li a:hover{
-    color: crimson;
+.navbar .menu li a:hover {
+  color: crimson;
 }
 .navbar .menu li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
-.navbar .logo  a{
-    color: #fff;
-    font-size: 45px;
-    font-weight: 500;
-   
+.navbar .logo a {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
 }
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky .menu li a:hover{
-    color: #fff;
+.navbar .logo a span {
+  color: crimson;
+  transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span{
-    color: #fff;
+.navbar.sticky .menu li a:hover {
+  color: #fff;
 }
 
+.navbar.sticky .logo a span {
+  color: #fff;
+}
 
 /*  menu btn styling*/
 
-
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
 }
-
-
 
 /*   home section */
 
-
-.home{
-    display: flex;
-    background: url("../images/flight_loading_vikas-singh.gif") no-repeat;
-    height: 95vh;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    min-height: 500px;
+.home {
+  display: flex;
+  background: url("../images/flight_loading_vikas-singh.gif") no-repeat;
+  height: 95vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 500px;
 }
 
-.home .max-width{
-    margin: auto 0 auto 40px;
+.home .max-width {
+  margin: 100px auto 40px auto;
 }
 
-.home .home-content .text-1{
-    font-size: 27px;
+.home .home-content .text-1 {
+  font-size: 27px;
 }
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
 }
 
-.home .home-content .text-3 span{
-    font-weight: 500;
-    color: crimson;
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
 }
 
-
+.home .home-content .text-3 span {
+  font-weight: 500;
+  color: crimson;
+}
 
 /*  similar  styling*/
 
-section{
-    padding: 70px 0;
+section {
+  padding: 70px 0;
 }
 
-section .title{
-    position: relative;
-    text-align: center;
-    font-weight: 500;
-    font-size: 40px;
-    padding-bottom: 20px;
-    margin-bottom: 60px;
+section .title {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
 }
 
-
-section.title::before{
-    content: " ";
-    position: absolute;
+section.title::before {
+  content: " ";
+  position: absolute;
   width: 180px;
   height: 3px;
   background: #111;
   bottom: 0px;
   left: 50%;
-transform: translateX(-50%);
-
+  transform: translateX(-50%);
 }
 
-section .title::after{
-
-    position: absolute;
+section .title::after {
+  position: absolute;
   background: #fff;
   bottom: -12px;
   left: 50%;
   font-size: 20px;
   color: crimson;
   padding: 5px;
-transform: translateX(-50%);
-
+  transform: translateX(-50%);
 }
 /*  About section styling*/
 
-.about .title::after{
-    content:" My Background";
+.about .title::after {
+  content: " My Background";
 }
 
-.about .title#camback::after{
-    content:"Cameroon";
+.about .title#camback::after {
+  content: "Cameroon";
 }
-.about .title#mauback::after{
-    content:"Mauritius";
+.about .title#mauback::after {
+  content: "Mauritius";
 }
-.about .title#ukback::after{
-    content:"United Kingdom";
+.about .title#ukback::after {
+  content: "United Kingdom";
 }
-.about .about-content,.travel .travel-content,
-.contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.about .about-content .left{
-    width: 45%;
+.about .about-content,
+.travel .travel-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.about .about-content .left {
+  width: 45%;
 }
 
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
-.about .about-content .right .text span{
-    color: crimson;
+.about .about-content .right .text span {
+  color: crimson;
 }
-.about .about-content .right p{
-    text-align: justify;
+.about .about-content .right p {
+  text-align: justify;
 }
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 /*   travel*/
-.travel,.tech{
-    background: #111;
-    color: #fff;
+.travel,
+.tech {
+  background: #111;
+  color: #fff;
 }
 .travel .title::before,
-.tech .title::before{
-   background: #fff;
+.tech .title::before {
+  background: #fff;
 }
 
-.tech .title::after{
-    
-    background: #111;    
+.tech .title::after {
+  background: #111;
 }
 
-.travel .title#camtitle::after{
-    content: "Cameroon";
-    background: #111;  
+.travel .title#camtitle::after {
+  content: "Cameroon";
+  background: #111;
 }
 
-.travel .title#uktitle::after{
-    content: "United Kingdom";
-    background: #111;  
+.travel .title#uktitle::after {
+  content: "United Kingdom";
+  background: #111;
 }
-.travel .title#update::after{
-    content: "For All Countries";
-    background: #111;  
-}
-
-.travel .title#mautitle::after{
-    content: "Mauritius";
-    background: #111;  
+.travel .title#update::after {
+  content: "For All Countries";
+  background: #111;
 }
 
-
-.travel .travel-content .card{
-    width: calc(33% -   20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-}
-.travel .travel-content .card:hover{
-
-    background: crimson;
-}
-.travel .travel-content .card:hover i{
-
-    background: #fff;
+.travel .title#mautitle::after {
+  content: "Mauritius";
+  background: #111;
 }
 
-
-.travel .travel-content .card .box{
-    transition: all 0.3s ease;
-    margin-bottom: 80px;
+.travel .travel-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
-.travel .travel-content .card .box:hover{
-    transform: scale(1.05);
-
+.travel .travel-content .card:hover {
+  background: crimson;
 }
-.travel .travel-content .card i{
-
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-.travel .travel-content .card .text{
-
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0 ;
+.travel .travel-content .card:hover i {
+  background: #fff;
 }
 
+.travel .travel-content .card .box {
+  transition: all 0.3s ease;
+  margin-bottom: 80px;
+}
+.travel .travel-content .card .box:hover {
+  transform: scale(1.05);
+}
+.travel .travel-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.travel .travel-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
 
 /*  href links in text styling*/
-#entryuk a,#placeuk a,#infouk a,#placesuk a,#certificatesuk a,#entrymu a{
-color: dodgerblue;
+#entryuk a,
+#placeuk a,
+#infouk a,
+#placesuk a,
+#certificatesuk a,
+#entrymu a {
+  color: dodgerblue;
 }
-
 
 /*  tech stack styling*/
 
-
-
-.tech .title::after{
-    content: "Techologies used";
+.tech .title::after {
+  content: "Techologies used";
 }
-.tech.carousel .card{
-    background: red;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-
+.tech.carousel .card {
+  background: red;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
-.tech .carousel .card img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 80%;
-    border: 5px solid crimson;
-    
-    
+.tech .carousel .card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 80%;
+  border: 5px solid crimson;
 }
-.tech .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    
+.tech .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
-.tech .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+.tech .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
-.tech .carousel .card:hover{
-    background: crimson;
+.tech .carousel .card:hover {
+  background: crimson;
 }
-.tech  .carousel .card:hover img{
-    border-color: #fff;
+.tech .carousel .card:hover img {
+  border-color: #fff;
 }
-.tech .carousel .card:hover .box{
-    transform: scale(1.05);
+.tech .carousel .card:hover .box {
+  transform: scale(1.05);
 }
 
-
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
 }
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
 }
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
 }
 .owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
+.owl-dot:hover {
+  background: crimson !important;
 }
 /*
 contact us
 */
-.contact .title::after{
-    content: "Say Hi";
+.contact .title::after {
+  content: "Say Hi";
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
+.contact .contact-content .column {
+  width: calc(50% - 30px);
 }
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.contact .contact-content .left p{
-    text-align: justify;
+.contact .contact-content .left p {
+  text-align: justify;
 }
-.contact .contact-content .left .icons{
-    margin: 10px 0;
+.contact .contact-content .left .icons {
+  margin: 10px 0;
 }
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
 }
-.contact .contact-content .row .info{
-    margin-left: 30px;
+.contact .contact-content .row .info {
+  margin-left: 30px;
 }
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: crimson;
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: crimson;
 }
-.contact .contact-content .info .head{
-    font-weight: 500;
+.contact .contact-content .info .head {
+  font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
-    color: #333;
+.contact .contact-content .info .sub-title {
+  color: #333;
 }
-.contact .right form .fields{
-    display: flex;
+.contact .right form .fields {
+  display: flex;
 }
 .contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
 }
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
 }
-.contact .right form .name{
-    margin-right: 10px;
+.contact .right form .name {
+  margin-right: 10px;
 }
-.contact .right form .email{
-    margin-left: 10px;  
+.contact .right form .email {
+  margin-left: 10px;
 }
 .contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
 }
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
 }
-.contact .right form .button{
-    height: 47px;
-    width: 170px;
+.contact .right form .button {
+  height: 47px;
+  width: 170px;
 }
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
-    color: crimson;
-    background: none;
+.contact .right form .button button:hover {
+  color: crimson;
+  background: none;
 }
-
-
-
-
-
-
 
 /* for footer*/
 
-footer{
-    
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 30px 80px;
-    background: #1b1b1b;
-   
-    justify-content: space-between;
-    flex-wrap: wrap;
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 30px 80px;
+  background: #1b1b1b;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
-footer .container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-footer .container .sec{
-    margin-right: 30px;
+footer .container .sec {
+  margin-right: 30px;
 }
-footer .container .sec.aboutus{
-    width: 200px;
-    font-size: 23px;
-    
-  
+footer .container .sec.aboutus {
+  width: 200px;
+  font-size: 23px;
 }
 
-
-
-footer .container  h2{
-    position: relative;
-    color: #fff;
-    font-weight: 1200;
-    margin-bottom: 15px;
+footer .container h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 1200;
+  margin-bottom: 15px;
 }
 
-footer  h2::before{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 70px;
-    height: 2px;
-    background:crimson;
-
+footer h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: crimson;
 }
 
-footer  p{
-    color: #fff;
+footer p {
+  color: #fff;
 }
 
-
-.sci{
-    margin-top: 20px;
-    display: flex;
-    margin-left: -20px;
+.sci {
+  margin-top: 20px;
+  display: flex;
+  margin-left: -20px;
 }
 
-.sci li{
-    list-style: none;
-    
+.sci li {
+  list-style: none;
 }
 
-.sci li a{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px;
-    text-decoration: none;
-    border-radius: 10px;
-    
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  text-decoration: none;
+  border-radius: 10px;
 }
-.sci li a:hover{
-    background:crimson;
+.sci li a:hover {
+  background: crimson;
 }
-.sci li a .fa{
-    color: #fff;
-    font-size: 30px;
-}
-
-
-.quickLinks{
-    position: relative;
-    width:50%;
-    font-size: 23px;
-    left: 15vw;
-    
+.sci li a .fa {
+  color: #fff;
+  font-size: 30px;
 }
 
-.quickLinks ul li{
-    list-style: none;
+.quickLinks {
+  position: relative;
+  width: 50%;
+  font-size: 23px;
+  left: 15vw;
 }
 
-.quickLinks ul li a{
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-    font-size: 23px;
+.quickLinks ul li {
+  list-style: none;
 }
 
-.quickLinks ul li a:hover{
-    color: crimson;
+.quickLinks ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 23px;
 }
 
-.contacts{
-    width: calc(35%-60px);
-    margin-right: 0 !important;
-    font-size: 23px;
+.quickLinks ul li a:hover {
+  color: crimson;
 }
 
-
-.contacts .info{
-    position: relative;
-    
-}
-.contacts .info li{
-    display: flex;
-    margin-bottom: 16px;
-    font-size: 23px;
+.contacts {
+  width: calc(35%-60px);
+  margin-right: 0 !important;
+  font-size: 23px;
 }
 
-.contacts .info li span:nth-child(1){
-    color: #fff;;
-    font-size: 18px;
-    margin-right: 10px;
+.contacts .info {
+  position: relative;
 }
-.contacts .info li span{
-    color:#fff;
-
-}
-
-.contacts .info li  a{
-    color: #fff; 
-    text-decoration: none;
-    
-
-}
-.contacts .info li a:hover{
-    color: #fff;
+.contacts .info li {
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 23px;
 }
 
-.copyrightText{
-    width: 100%;
-   
-    padding: 8px 10px;
-    text-align: center;
-    color: #fff;
-    background: #1b1b1b;
-   font-size: 23px;
+.contacts .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.contacts .info li span {
+  color: #fff;
 }
 
+.contacts .info li a {
+  color: #fff;
+  text-decoration: none;
+}
+.contacts .info li a:hover {
+  color: #fff;
+}
+
+.copyrightText {
+  width: 100%;
+
+  padding: 8px 10px;
+  text-align: center;
+  color: #fff;
+  background: #1b1b1b;
+  font-size: 23px;
+}
 
 /*  map*/
-#maumap,#ukmap,#cammap{
+#maumap,
+#ukmap,
+#cammap {
+  height: 35vw;
+  width: 50%;
 
-    height: 35vw;
-    width: 50%;
- 
-    margin-left: 0px;
-    left: -6vw;
-    
+  margin-left: 0px;
+  left: -6vw;
 }
 
-
-.charts #myChart,.charts #myChart2, .charts #myChart3{
-   
-    padding-bottom:50px ;
+.charts #myChart,
+.charts #myChart2,
+.charts #myChart3 {
+  padding-bottom: 50px;
 }
 
-
-
-@media (min-width:1301px){
-
-    .travel .travel-content .card{
-        width: 33%;
-        height: 760px;
-    }
-     #cert,#infos,#trav{
-       
-        height: 615px;
-    }
-
-    
+@media (min-width: 1301px) {
+  .travel .travel-content .card {
+    width: 33%;
+    height: 760px;
+  }
+  #cert,
+  #infos,
+  #trav {
+    height: 615px;
+  }
 }
 /* for responsiveness*/
-@media (max-width:1300px){
-    .home .max-width{
-        margin-left: 0px;
-    }
-    .travel .travel-content .card{
-        width: 32%;
-        height: 760px;
-    }
-     #cert,#infos,#trav{
-       
-        height: 615px;
-    }
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+  .travel .travel-content .card {
+    width: 32%;
+    height: 760px;
+  }
+  #cert,
+  #infos,
+  #trav {
+    height: 615px;
+  }
 
-    #entuk,#latuk,#pubuk{
-        height: 1100px;
-        
-    }
-    #certuk,#infosuk,#travuk{
-        height: 1420px;
-        
-    }
+  #entuk,
+  #latuk,
+  #pubuk {
+    height: 1100px;
+  }
+  #certuk,
+  #infosuk,
+  #travuk {
+    height: 1420px;
+  }
 }
 
-@media (max-width:1104px){
-    .about .about-content .left img{
-        height: 350px;
-        width: 350px ;
-    }
-    .travel .travel-content .card{
-        width: 32%;
-        height: 960px;
-    }
-    #cert,#infos,#trav{
-       
-        height: 715px;
-    }
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  .travel .travel-content .card {
+    width: 32%;
+    height: 960px;
+  }
+  #cert,
+  #infos,
+  #trav {
+    height: 715px;
+  }
 
-    .quickLinks{
-        left: 4vw;
-        width: 30%;
-    }
-    
-    #certmu,#infosmu,#travmu{
-        height: 530px;
-        
-    }
-    #certuk,#infosuk,#travuk{
-        height: 1200px;
-        
-    }
-    #entuk,#latuk,#pubuk{
-        height: 1100px;
-        
-    }
-    .map,.cammap,.ukmap{
-        width: 50%;
-        height: 900px;
-       
-        
-     }
-     
-    
+  .quickLinks {
+    left: 4vw;
+    width: 30%;
+  }
+
+  #certmu,
+  #infosmu,
+  #travmu {
+    height: 530px;
+  }
+  #certuk,
+  #infosuk,
+  #travuk {
+    height: 1200px;
+  }
+  #entuk,
+  #latuk,
+  #pubuk {
+    height: 1100px;
+  }
+  .map,
+  .cammap,
+  .ukmap {
+    width: 50%;
+    height: 900px;
+  }
 }
 
-
-@media (max-width:991px){
-
-    .max-width{
-       
-        padding: 0 50px;
-        
-    }
-    #maumap,#ukmap,#cammap{
-
-        
-        left: -1vw;
-       
-         
-    }
-
-    
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  #maumap,
+  #ukmap,
+  #cammap {
+    left: -1vw;
+  }
 }
 
-
-
-
-
-
-@media (max-width:947px){
-  
-
-
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active::before{
-       content: "\f00d";
-    }
-    .max-width{
-       
-        padding: 0 50px;
-        
-    }
-    .navbar .menu{
-        position: fixed;
-        background: #111;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        text-align: center;
-        padding-top: 60px;
-        transition: all 0.3s ease;
-    }
-.navbar .menu.active{
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active::before {
+    content: "\f00d";
+  }
+  .max-width {
+    padding: 0 50px;
+  }
+  .navbar .menu {
+    position: fixed;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 60px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
     left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
 
-}
-    .navbar .menu li{
-        display: block;
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-2 {
+    font-size: 35px;
+  }
 
-    }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
 
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 30px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-2{
-        font-size: 35px;
-    }
+  .about .about-content .right {
+    flex: 100%;
+  }
 
-    .about .about-content .column{
-        width: 100%;
-    }
-    .max-width{
-      max-width: 800px;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-        
-       
-    }
-    
-    
-    .about .about-content .right {
-        flex: 100%;
-    }
+  .travel .travel-content .card,
+  #cert,
+  #certmu {
+    width: 48%;
+    margin-bottom: 20px;
 
-    .travel .travel-content .card,#cert,#certmu{
-        width: 48%;
-        margin-bottom: 20px ;
-       
-      height: 820px;
-        
-    }
-  #infos,#trav{
-       
-        height: 630px;
-    }
-    
-    #certmu,#entmu{
-        height: 580px;
-        
-    }
-    #infosmu,#travmu{
-        height: 400px;
-        
-    }
+    height: 820px;
+  }
+  #infos,
+  #trav {
+    height: 630px;
+  }
 
-    #certuk,#infosuk,#travuk,#pubuk{
-        height: 1100px;
-        
-    }
-    #entuk,#latuk{
-        height: 800px;
-        
-    }
-    #maumap,#ukmap,#cammap{
-         height: 65vw;
-        width: 95%;
-     
-         left: 2vw;
-        
-         
-    }
-        
+  #certmu,
+  #entmu {
+    height: 580px;
+  }
+  #infosmu,
+  #travmu {
+    height: 400px;
+  }
+
+  #certuk,
+  #infosuk,
+  #travuk,
+  #pubuk {
+    height: 1100px;
+  }
+  #entuk,
+  #latuk {
+    height: 800px;
+  }
+  #maumap,
+  #ukmap,
+  #cammap {
+    height: 65vw;
+    width: 95%;
+
+    left: 2vw;
+  }
 }
 
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
 
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-2 {
+    font-size: 32px;
+  }
 
+  .travel .travel-content .card {
+    width: 100%;
+    height: 447px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  #infos,
+  #trav {
+    height: 330px;
+  }
+  #cert,
+  #certmu {
+    width: 100%;
+    height: 380px;
+  }
+  .quickLinks,
+  .contacts .info,
+  .contacts h2 {
+    left: -2.7vw;
+  }
+  .quickLinks {
+    left: 4vw;
+  }
+  #certuk,
+  #infosuk,
+  #travuk {
+    height: 1100px;
+  }
+  #entuk,
+  #latuk,
+  #pubuk {
+    height: 880px;
+  }
 
+  .map,
+  .cammap,
+  .ukmap {
+    width: 800px;
+    height: 1200px;
 
-@media(max-width: 690px){
-    .max-width{
-        padding: 0 23px;
-    }
-   
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-2{
-        font-size: 32px;
-    }
-
-    .travel .travel-content .card{
-        width: 100%;
-        height:447px;
-       
-    }
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-    #infos,#trav{
-       
-        height: 330px;
-    }
-    #cert,#certmu{
-        width: 100%;
-        height: 380px;
-    }
-    .quickLinks,.contacts .info ,.contacts h2 {
-        
-        left: -2.7vw;
-
-        
-    }
-    .quickLinks{
-        left: 4vw;
-        
-    }
-    #certuk,#infosuk,#travuk{
-        height: 1100px;
-        
-    }
-    #entuk,#latuk,#pubuk{
-        height: 880px;
-        
-    }
-    
-    .map,.cammap,.ukmap{
-        width: 800px;
-        height: 1200px;
-        
-    
-     margin-top: -10px;
-     
-     
-     }
-
-     
-     
+    margin-top: -10px;
+  }
 }
 
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  .about .about-content .right .text {
+    font-size: 19px;
+  }
 
+  .contact .right form .fields {
+    flex-direction: column;
+  }
 
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
 
-    @media (max-width: 500px) {
-        .home .home-content .text-2{
-            font-size: 50px;
-        }
-        .home .home-content .text-3{
-            font-size: 27px;
-        }
-        .about .about-content .right .text{
-            font-size: 19px;
-        }
-        
-        .contact .right form .fields{
-            flex-direction: column;
-        }
-        
-        .contact .right form .name,
-        .contact .right form .email{
-            margin: 0;
-        }
-        
-        section .title::after{
-            bottom: -40px;
-  
-          }
+  section .title::after {
+    bottom: -40px;
+  }
 
-          .travel .travel-content .card{
-            width: 100%;
-            height:720px;
-           
-        }
-         
-        #infos,#trav{
-           
-            height: 620px;
-        }
-        #cert{
-           
-            height: 605px;
-        }
-        
- }
+  .travel .travel-content .card {
+    width: 100%;
+    height: 720px;
+  }
 
-
-
- 
+  #infos,
+  #trav {
+    height: 620px;
+  }
+  #cert {
+    height: 605px;
+  }
+}
